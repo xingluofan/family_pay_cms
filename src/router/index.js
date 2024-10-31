@@ -8,7 +8,7 @@ import Cooking from '@/views/cooking/cooking'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   routes: [
     {
       path: '/',

@@ -48,7 +48,7 @@ export default {
     return {
       collapsed: false,
       menuList: this.$router.options.routes,
-      defaultSelectedKeys: this.$route.matched[0].components.default.name,
+      defaultSelectedKeys: this.$route.matched && this.$route.matched.length ? this.$route.matched[0].components.default.name : '首页',
     };
   },
   created() {
