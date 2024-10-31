@@ -1,5 +1,6 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/family_pay_cms/' : '/',
+  publicPath: './',
+  outputDir: 'docs',
   pwa: {
     workboxOptions: {
       skipWaiting: true,
