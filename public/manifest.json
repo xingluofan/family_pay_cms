@@ -1,6 +1,10 @@
-{
-    "short_name": "应用简称",
-    "name": "应用全称",
+  {
+    "name": "My Offline App",
+    "short_name": "OfflineApp",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4DBA87",
     "icon": [
         {
             "src": "./img/icons/android-chrome-192x192.png",
@@ -12,9 +16,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "start_url": "index.html",
-    "display": "standalone",
-    "background_color": "#080403",
-    "theme_color": "#080403"
+    ]
   }

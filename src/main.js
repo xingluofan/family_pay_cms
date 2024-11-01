@@ -7,6 +7,7 @@ import router from './router'
 import 'ant-design-vue/dist/antd.css';
 
 import dayjs from 'dayjs' // ES 2015
+import './registerServiceWorker'
 Vue.config.productionTip = false
 Vue.prototype.dayjs = dayjs;//可以全局使用dayjs
 

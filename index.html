@@ -16,10 +16,10 @@
 
 </html>
 <script>
-  // if (navigator.serviceWorker != null) {
-  //   navigator.serviceWorker.register('sw.js')
-  //     .then(function (registration) {
-  //       console.log('scope:', registration.scope)
-  //     })
-  // }
+  if (navigator.serviceWorker != null) {
+    navigator.serviceWorker.register('sw.js')
+      .then(function (registration) {
+        console.log('scope:', registration.scope)
+      })
+  }
 </script>

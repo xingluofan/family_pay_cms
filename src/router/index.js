@@ -12,6 +12,14 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/cooking', // 将根路径重定向到 /cooking 页面
+      componentName: 'Cooking',
+      name: '厨房助手',
+      icon: 'fire',
+      component: Cooking
+    },
+    {
+      path: '/home',
       componentName: 'HelloWorld',
       name: '首页',
       icon: 'home',
