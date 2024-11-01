@@ -16,13 +16,15 @@
 
 </html>
 <script>
-if (navigator.serviceWorker != null) {
-  navigator.serviceWorker.register('/family_pay_cms/sw.js') // 适配 GitHub Pages 的项目路径
-    .then(function (registration) {
-      console.log('scope:', registration.scope);
-    })
-    .catch(function (error) {
-      console.error('Service Worker registration failed:', error);
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/family_pay_cms/service-worker.js')
+            .then(registration => {
+                console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(error => {
+                console.error('Service Worker registration failed:', error);
+            });
     });
 }
 </script>
